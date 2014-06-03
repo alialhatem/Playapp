@@ -1,0 +1,19 @@
+@(message: String)
+
+
+@main("Welcome to Play") {
+@message
+<form action="@routes.Application.solve()" method="POST">
+  Insert equation's operators a*x^2+b*x+c:<br>
+  a: <input name="a"><br>
+  
+  b: <input name="b"><br>
+ 
+  c: <input name="c"><br>
+ 
+                    <input type="submit" value="solve">
+               </form>  
+
+ 
+
+}
